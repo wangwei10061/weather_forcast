@@ -1,0 +1,87 @@
+
+<!--index.wxml-->
+<view class="container">
+
+  <!-- 上部分 -->
+  <view class="weather">
+    <view class="weather-today {{pinyin}}">
+      <view class="today_top">
+        <view class="temperature_range">
+          {{forecast[0].low}} - {{forecast[0].high}}
+        </view>
+        <view class="refresh">
+          <image src="../../image/weather/white/refresh.png" bindtap="getWeather"></image>
+        </view>
+      </view>
+      <view class="today_center">
+        <image src="../../image/weather/white/{{forecast[0].type}}.png"></image>
+      </view>
+      <view class="today_bottom">
+        <view class="temperature">
+          {{currentTemp}}℃
+        </view>
+        <view class="city_area">
+          <view class='city'>
+            {{forecast[0].type}}
+          </view>
+          <view class="area">
+            {{city}},{{country}}
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <!-- 下部分 -->
+    <view class="weather_other">
+      <scroll-view scroll-x="true">
+        <view class="scroll-view_item" >
+          <view class="item_top">
+            {{forecast[1].date}}
+          </view>
+          <view class="item_center">
+            <image src="../../image/weather/black/{{forecast[1].type}}.png"></image>
+          </view>
+          <view class="item_bottom">
+            {{forecast[1].low}} - {{forecast[1].high}}
+          </view>
+        </view>
+       
+        <view class="scroll-view_item" >
+          <view class="item_top">
+            {{forecast[2].date}}
+          </view>
+          <view class="item_center">
+            <image src="../../image/weather/black/{{forecast[2].type}}.png"></image>
+          </view>
+          <view class="item_bottom">
+            {{forecast[2].low}} - {{forecast[2].high}}
+          </view>
+        </view>
+
+        <view class="scroll-view_item" >
+          <view class="item_top">
+            {{forecast[3].date}}
+          </view>
+          <view class="item_center">
+            <image src="../../image/weather/black/{{forecast[3].type}}.png"></image>
+          </view>
+          <view class="item_bottom">
+            {{forecast[3].low}} - {{forecast[3].high}}
+          </view>
+        </view>
+
+        <view class="scroll-view_item" >
+          <view class="item_top">
+            {{forecast[4].date}}
+          </view>
+          <view class="item_center">
+            <image src="../../image/weather/black/{{forecast[4].type}}.png"></image>
+          </view>
+          <view class="item_bottom">
+            {{forecast[4].low}} - {{forecast[4].high}}
+          </view>
+        </view>
+      </scroll-view>
+    </view>
+  </view>
+</view>

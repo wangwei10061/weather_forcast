@@ -1,0 +1,142 @@
+/**index.wxss**/
+
+.container {
+  padding:0 40rpx 40rpx 40rpx;
+  
+}
+
+.weather {
+  width:100%;
+  height:100%;
+  background-color:#fff;
+  box-shadow: 0, 0, 30px rgba(0, 0, 0, 0.3);
+  border-radius: 20rpx;
+  overflow:hidden;
+}
+
+.weather .weather-today {
+  position: relative;
+  width:100%;
+  height: 60%;
+  
+  -webkit-text-fill-color: white;
+}
+
+/*上方区域上部*/
+.weather .weather-today .today_top {
+  position: relative;
+  width:100%;
+  height: 20%;
+  padding:20rpx;
+}
+
+.weather .weather-today .today_top .temperature_range{
+  float: left;
+}
+
+.weather .weather-today .today_top .refresh{
+  float: right;
+}
+
+.weather .weather-today .today_top .refresh image{
+  width: 50rpx;
+  height: 50rpx;
+}
+
+/*上方区域中部*/
+.weather .weather-today .today_center {
+  padding: 50rpx;
+  width:100%;
+  height: 60%;
+  text-align: center;
+}
+
+.weather .weather-today image {
+  width: 300rpx;
+  height: 300rpx;
+}
+
+
+/*上方区域下部*/
+
+.weather .weather-today .today_bottom {
+  width:100%;
+  height: 20%;
+}
+
+
+.weather .weather-today .today_bottom .temperature{
+  font-size: 100rpx;
+  height: 100%;
+  float: left;
+}
+
+.weather .weather-today .today_bottom .city_area{
+  text-align: center;
+  font-size: 50rpx;
+  height: 100%;
+  float: right;
+}
+
+/* 下部分 */
+.weather .weather_other {
+  width: 100%;
+  height: 40%;
+  -webkit-text-fill-color: #564F4F;
+}
+
+.weather .weather_other scroll-view {
+  width: 100%;
+  height: 100%;
+  white-space: nowrap;
+}
+
+/* 下方滚动区域滚动项 */
+.weather .weather_other scroll-view .scroll-view_item {
+  width: 33.333333%;
+  height: 100%;
+
+  text-align: center;
+  border:1rpx solid #EEEEEE;
+  display: inline-block;
+}
+
+.weather .weather_other scroll-view .scroll-view_item .item_top {
+  margin-top: 20rpx;
+  width: 100%;
+  height: 20%;
+}
+
+.weather .weather_other scroll-view .scroll-view_item .item_center {
+  width: 100%;
+  height: 60%;
+}
+
+.weather .weather_other scroll-view .scroll-view_item .item_bottom {
+  vertical-align: center;
+  width: 100%;
+  height: 60%;
+}
+
+.weather .weather_other scroll-view .scroll-view_item .item_center image{
+  width: 200rpx;
+  height: 200rpx;
+}
+
+/*根据天气改变背景色*/
+.qing{background:linear-gradient(0deg, #ff2500 0%, #ff6200 100%);}
+.yin{background:linear-gradient(0deg, #23294d 0%, #818181 100%);}
+.duoyun{background:linear-gradient(0deg, #3d3e5c 0%, #4d5794 100%);}
+.xiaoyu{background:linear-gradient(0deg, #1e5eff 0%, #2fe5c0 100%);}
+.zhongyu{background:linear-gradient(0deg, #0018ff 0%, #57d1e7 100%);}
+.dayu{background:linear-gradient(0deg, #000d8c 0%, #70b0ff 100%);}
+.baoyu{background:linear-gradient(0deg, #10008b 0%, #2f3ce5 100%);}
+.zhenyu{background:linear-gradient(0deg, #4b47ff 0%, #9545f9 100%);}
+.leizhenyu{background:linear-gradient(0deg, #ff479e 0%, #da45f9 100%);}
+.yujiaxue{background:linear-gradient(0deg, #2597e5 0%, #bababa 100%);}
+.binbao{background:linear-gradient(0deg, #2fe562 0%, #00ffcc 100%);}
+.wu{background:linear-gradient(0deg, #ababab 0%, #d5d4a5 100%);}
+.mai{background:linear-gradient(0deg, #ff981e 0%, #d7e223 100%);}
+.xiaoxue{background:linear-gradient(0deg, #bcbcbc 0%, #d9d9d9 100%);}
+.daxue{background:linear-gradient(0deg, #9b9b9b 0%, #d8d8d8 100%);}
+.baoxue{background:linear-gradient(0deg, #727272 0%, #d7d7d7 100%);}
