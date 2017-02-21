@@ -9,7 +9,7 @@
 * 微信官方组件scrollview等布局组件的使用
 
 效果截图：  
-![weather](F:/projects/images/2016/12/weather.png)  
+![weather](./image/weather.png)  
 
 使用方法：  
 用微信web开发者工具新建项目指向项目文件夹即可  
